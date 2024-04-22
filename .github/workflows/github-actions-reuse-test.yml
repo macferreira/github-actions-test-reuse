@@ -1,0 +1,6 @@
+name: github-actions-reuse-test
+run-name: ${{ github.actor }} is testing GitHub Actions reusable workflows
+on: [push]
+jobs:
+    call-workflow-passing-data:
+      uses: macferreira/github-actions-test/.github/workflows/github-action-test.yml@main
